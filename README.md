@@ -9,3 +9,9 @@ Note:
 
     Ignore if already installed.
 2. If you are cloning this repository, then you will not have to run the 'install.sh' script at all. Simple copy paste of the files would do.
+
+
+Packages Required:
+ulauncher
+grimshot
+brightness
