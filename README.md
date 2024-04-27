@@ -15,3 +15,4 @@ Packages Required:
 ulauncher
 grimshot
 brightness
+wayfire
