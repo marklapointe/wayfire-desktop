@@ -44,8 +44,8 @@
         "spacing": 10
     },
     "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "timezone": "America/New_York",
+        "tooltip-format": "<big><tt>{calendar}</tt></big>",
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
@@ -140,20 +140,9 @@
         "format": "",
         "on-click": "bash ~/.config/system_scripts/layout.sh"
     },
-    "custom/updater":{
-        "format": "  {} Updates",
-        "exec": "yay -Qu | wc -l",
-        "exec-if": "[[ $(yay -Qu | wc -l) != 0 ]]",
-        "interval": 15,
-        "on-click": "alacritty -e yay -Syu"
-    },
     "custom/snip":{
         "format": "",
         "on-click": "grimshot --notify save area $HOME/Pictures/$(zenity --entry --text 'Set filename:' --entry-text '.png')"
-    },
-    "custom/wallpaper":{
-        "format": "",
-        "on-click": "bash ~/.config/system_scripts/pkill_bc"
     }
 }
 
